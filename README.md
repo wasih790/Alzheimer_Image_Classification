@@ -3,6 +3,7 @@
 ## Project Description
 The objective of this project is to develop a deep learning model using Convolutional Neural Networks (CNN) to accurately classify brain MRI images of Alzheimer’s disease. The dataset consists of four classes to identify: MildDemented, ModerateDemented, NonDemented, and VeryMildDemented. The model's accurate identification of these classes can assist in the early detection and diagnosis of Alzheimer's disease, contributing to better control and treatment options for affected individuals.
 
+![0a4b319a-ae18-4bdc-b26b-14484acd33f6](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/287eb07a-d27d-490d-addd-bffb6d46ef52)
 
 ## Business Understanding
 ### Problem Statement
@@ -30,12 +31,12 @@ The following preprocessing steps were applied to the data:
 
 - Normalization: Scaling the pixel values of the images to a range between 0 and 1 to improve model performance.
 - Data Augmentation: Introducing variations in the data by applying transformations like rotation and flipping, increasing the diversity of the dataset, and improving model generalization.
-- Train-Test Split: Dividing the dataset into training and testing sets to evaluate the model's performance on unseen data. But instead of the sklearn method, we used ImageDataGenerator, created an training generator, validation generator, and testing generator. 
+- Train-Test Split: Dividing the dataset into training and testing sets to evaluate the model's performance on unseen data. But instead of the sklearn method, we used ImageDataGenerator and created a training generator, validation generator, and testing generator. 
 
 
 ## Modeling
 ### Modeling Techniques
-For the image classification problem of identifying Alzheimer's disease stages based on brain MRI images, we used Convolutional Neural Networks (CNNs). Three CNN models were developed from scratch, two transfer learning models (GoogLeNet and ResNet50) were explored, and a Keras Tuner with Hyperband model was developed. 
+For the image classification problem of identifying Alzheimer's disease stages based on brain MRI images, we used Convolutional Neural Networks (CNNs). Three CNN models were developed from scratch, two transfer learning models (GoogLeNet and ResNet50) were explored, and a Keras Tuner with a Hyperband model was developed. 
 
 ### Target Variable
 The dataset used in this project consists of MRI scans of the brain with four different classes to classify:
@@ -63,9 +64,12 @@ Three Convolutional Neural Network (CNN) models were created from scratch. The d
 
 3. Model v3:
 - Architecture: Transfer Learning with Regularization (VGG16-based)
-- Regularization: Dropout layers (0.2, 0.4, 0.1), TensorBoard was also used to log different method of regularization.
+- Regularization: Dropout layers (0.2, 0.4, 0.1), TensorBoard was also used to log different methods of regularization.
 - Accuracy: 0.9341
 - AUC: 0.9923
+
+![Screenshot 2023-08-01 at 11 29 03 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/6ca34280-16df-4b00-b7a5-846a400bad14)
+![Screenshot%202023-07-20%20at%207.11.33%20PM.jpg](attachment:Screenshot%202023-07-20%20at%207.11.33%20PM.jpg)
 
 #### Transfer Learning Models
 Two transfer learning models were used - GoogLeNet and ResNet50, both implemented using Google Colaboratory on the cloud.
@@ -79,7 +83,7 @@ Two transfer learning models were used - GoogLeNet and ResNet50, both implemente
 - AUC: 0.8801
 
 #### Hyperparameter Tuning with Keras Tuner
-- The Keras Tuner library was used to find the optimal set of hyperparameters for the TensorFlow models. Hyperband tuning algorithm was employed in a for loop to create models with 2 to 20 layers, each with 32 to 512 units. The best model achieved an accuracy of 0.8075 and can be found in the 'Keras Tuner' folder.
+- The Keras Tuner library was used to find the optimal set of hyperparameters for the TensorFlow models. The Hyperband tuning algorithm was employed in a for loop to create models with 2 to 20 layers, each with 32 to 512 units. The best model achieved an accuracy of 0.8075 and can be found in the 'Keras Tuner' folder.
 
 ### Tools/Methodologies
 Python Libraries: NumPy, Os, TensorFlow, Keras, Sklearn
@@ -96,6 +100,8 @@ The repository contains the following folders:
 
 
 ## Conclusion
-The best-performing model achieved an accuracy of 0.9341 and was developed from scratch with regularization techniques. The CNN models outperformed the transfer learning models (GoogLeNet and ResNet50) in this specific task of Alzheimer's disease image classification. The Keras Tuner model using Hyperband achieved an accuracy of 0.8075, demonstrating the efficacy of hyperparameter tuning.
+The best-performing model achieved an accuracy of 0.9341 and was developed from scratch with regularization techniques.
+![Screenshot%202023-07-20%20at%2012.55.45%20PM.jpg](attachment:Screenshot%202023-07-20%20at%2012.55.45%20PM.jpg)
+The CNN models outperformed the transfer learning models (GoogLeNet and ResNet50) in this specific task of Alzheimer's disease image classification. The Keras Tuner model using Hyperband achieved an accuracy of 0.8075, demonstrating the efficacy of hyperparameter tuning.
 
 The project's outcomes have the potential to contribute significantly to the early detection and diagnosis of Alzheimer's disease, leading to improved patient outcomes and reduced healthcare costs. Furthermore, the models and techniques developed can serve as valuable tools for medical professionals and researchers in the field of Alzheimer's disease-related studies.
