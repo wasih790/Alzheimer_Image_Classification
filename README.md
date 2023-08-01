@@ -69,7 +69,8 @@ Three Convolutional Neural Network (CNN) models were created from scratch. The d
 - AUC: 0.9923
 
 ![Screenshot 2023-08-01 at 11 29 03 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/6ca34280-16df-4b00-b7a5-846a400bad14)
-![Screenshot%202023-07-20%20at%207.11.33%20PM.jpg](attachment:Screenshot%202023-07-20%20at%207.11.33%20PM.jpg)
+![Screenshot 2023-08-01 at 11 40 30 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/0a83e967-dcb6-4863-8c9a-0332116bada5)
+
 
 #### Transfer Learning Models
 Two transfer learning models were used - GoogLeNet and ResNet50, both implemented using Google Colaboratory on the cloud.
@@ -101,7 +102,7 @@ The repository contains the following folders:
 
 ## Conclusion
 The best-performing model achieved an accuracy of 0.9341 and was developed from scratch with regularization techniques.
-![Screenshot%202023-07-20%20at%2012.55.45%20PM.jpg](attachment:Screenshot%202023-07-20%20at%2012.55.45%20PM.jpg)
+![Screenshot 2023-08-01 at 11 40 42 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/38605fc6-18fa-4b73-a52f-175c32d7259d)
 The CNN models outperformed the transfer learning models (GoogLeNet and ResNet50) in this specific task of Alzheimer's disease image classification. The Keras Tuner model using Hyperband achieved an accuracy of 0.8075, demonstrating the efficacy of hyperparameter tuning.
 
 The project's outcomes have the potential to contribute significantly to the early detection and diagnosis of Alzheimer's disease, leading to improved patient outcomes and reduced healthcare costs. Furthermore, the models and techniques developed can serve as valuable tools for medical professionals and researchers in the field of Alzheimer's disease-related studies.
