@@ -47,6 +47,8 @@ The dataset used in this project consists of MRI scans of the brain with four di
 - Mild Demented
 - Non-Demented
 
+![Screenshot 2023-08-01 at 11 47 01 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/19225246-07f2-4b27-b1c0-8517749097e0)
+
 ### Model Evaluation
 The primary metrics used to evaluate the models were Accuracy and AUC scores.
 
