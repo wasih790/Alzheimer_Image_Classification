@@ -3,7 +3,8 @@
 ## Project Description
 The objective of this project is to develop a deep learning model using Convolutional Neural Networks (CNN) to accurately classify brain MRI images of Alzheimer’s disease. The dataset consists of four classes to identify: MildDemented, ModerateDemented, NonDemented, and VeryMildDemented. The model's accurate identification of these classes can assist in the early detection and diagnosis of Alzheimer's disease, contributing to better control and treatment options for affected individuals.
 
-![0a4b319a-ae18-4bdc-b26b-14484acd33f6](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/287eb07a-d27d-490d-addd-bffb6d46ef52)
+![Screenshot 2023-08-01 at 11 43 43 AM](https://github.com/wasih790/Project_5_Alzheimer_Image_Classification/assets/120667351/8d9b29fa-e98b-49d7-9a6c-0bff53c940d0)
+
 
 ## Business Understanding
 ### Problem Statement
